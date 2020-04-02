@@ -8,6 +8,25 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*Add custom styles below...*/
 /*16px*/
 
+/* Resume Styles */
+#resume h3{
+  font-weight: bold;
+}
+#resume h4 {
+  position: absolute;
+  left: -10000px;
+}
+.details li,
+.responsibilities li {
+  text-indent: -24px;
+  padding-left: 24px;
+  margin-left: 24px;
+}
+.responsibilities {
+  list-style-type: disc;
+}
+
+/*style for running-page.html */
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25em; /* 20px / 16px */
