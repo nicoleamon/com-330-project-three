@@ -9,6 +9,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*16px*/
 
 /* Resume Styles */
+
+#resume h1 {
+  font-weight: bold;
+  font-style: Bebas Neue;
+}
+#resume h2 {
+  font-size: 1.875em;
+  border-bottom: 0.0625em solid black;
+}
 #resume h3{
   font-weight: bold;
 }
@@ -27,7 +36,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 /*style for running-page.html */
-html {
+#hobbies html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25em; /* 20px / 16px */
   background-color: rgb(168,190,255); /*light blue color*/
