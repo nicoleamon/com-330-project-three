@@ -12,7 +12,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 #resume h1 {
   font-weight: bold;
-  font-style: Bebas Neue;
 }
 #resume h2 {
   font-size: 1.875em;
@@ -21,7 +20,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #resume h3{
   font-weight: bold;
 }
-#resume h4 {
+#resume h4 {4
   position: absolute;
   left: -10000px;
 }
@@ -34,6 +33,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .responsibilities {
   list-style-type: disc;
 }
+
 
 /*style for running-page.html */
 #hobbies html {
