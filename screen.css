@@ -69,12 +69,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   left: -10000px;
 }
 .details li,
-.responsibilities li {
+.responsibilities li,
+.achievements li,
+.skills li {
   text-indent: -24px;
   padding-left: 24px;
   margin-left: 24px;
 }
-.responsibilities {
+.responsibilities, .achievements, .skills {
   list-style-type: disc;
 }
 
