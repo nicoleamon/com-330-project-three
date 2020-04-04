@@ -11,12 +11,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   font-size: 3.125em;
   text-align: center;
 }
+#home-page h2 {
+  text-align: center;
+  font-weight: bold;
+}
 
 /*Navigation Styles*/
 .nav a {
-  background: #600;
-  border: 1px solid #600;
-  color: #EEE;
+  background: #2263B3;
+  border: 1px solid #2263B3;
+  color: #E7EBD4;
   display: block;
   line-height: 0;
   outline: 0;
@@ -31,8 +35,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
-  background: #EEE;
-  color: #600;
+  background: #E7EBD4;
+  color: #2263B3;
 }
 
 #about-page #nav-about,
