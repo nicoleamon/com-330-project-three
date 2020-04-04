@@ -6,8 +6,40 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles... */
 /*Add custom styles below...*/
-/*16px*/
 
+#home-page h1 {
+  font-size: 3.125em;
+  text-align: center;
+}
+
+/*Navigation Styles*/
+.nav a {
+  background: #600;
+  border: 1px solid #600;
+  color: #EEE;
+  display: block;
+  line-height: 0;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  padding: 1.25em;
+  margin-bottom: .375em;
+}
+#about-page #nav-about,
+#home-page #nav-home,
+#resume-page #nav-resume,
+.nav a:hover,
+.nav a:active,
+.nav a:focus {
+  background: #EEE;
+  color: #600;
+}
+
+#about-page #nav-about,
+#home-page #nav-home,
+#resume-page #nav-resume {
+  cursor: default;
+}
 /* Resume Styles */
 
 #resume h1 {
@@ -34,7 +66,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   list-style-type: disc;
 }
 
-
 /*style for running-page.html */
 #hobbies html {
   font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +83,7 @@ img,audio,video {
   max-width: 100%;
 }
 /*mobile first settings*/
-h1 {
+#hobbies h1 {
   text-align: center;
   font-size: 1.875em; /* 30px / 16 px */
   line-height: 1.25em; /* 20px / 16 px */
@@ -60,7 +91,7 @@ h1 {
   grid-column: 1/4;
   color: rgb(255,255,255);
 }
-header {
+#hobbies header {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
   background-color: rgb(44,66,128);
