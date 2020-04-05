@@ -15,7 +15,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   text-align: center;
   font-weight: bold;
 }
-
 /*Navigation Styles*/
 .nav a {
   background: #2263B3;
@@ -46,25 +45,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 /* Resume Styles */
 
-#resume h1 {
+#about-page h1,
+#resume-page h1 {
   text-align: center;
   font-weight: bold;
   font-size: 1.875em;
-  color: rgb(255,255,255);
+  padding: .375em;
 }
-#resume h2 {
+#resume-page h2 {
   text-align: center;
   font-size: 1.625em;
-  border-bottom: 0.0625em solid black;
 }
-#resume header {
-  background-color: rgb(44,66,128);
-  padding: 1.25em;
-}
-#resume h3{
+#resume-page h3{
   font-weight: bold;
 }
-#resume h4 {4
+#resume-page h4 {
   position: absolute;
   left: -10000px;
 }
@@ -80,7 +75,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   list-style-type: disc;
 }
 
-/*style for running-page.html */
+/*style about me page */
+.tagline {
+  text-align: center;
+  font-style: italic;
+  padding-left: 1.625em;
+  padding-right: 1.625em;
+}
+
+/*style for running-page */
 #hobbies html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25em; /* 20px / 16px */
