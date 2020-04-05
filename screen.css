@@ -27,6 +27,14 @@ html {
 .headshot {
   padding-bottom: 1.125em;
 }
+.highlights {
+  line-height: 1.75em;
+  padding-left: 1.125em;
+  }
+.highlights li{
+  list-style-type: disc;
+}
+
 /*Navigation Styles*/
 .nav a {
   background: #2263B3;
