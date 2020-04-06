@@ -34,7 +34,9 @@ html {
 .highlights li{
   list-style-type: disc;
 }
-
+address{
+  line-height: 1.25em;
+}
 /*Navigation Styles*/
 .nav a {
   background: #2263B3;
@@ -48,9 +50,11 @@ html {
   padding: 1.25em;
   margin-bottom: .375em;
 }
+
 #about-page #nav-about,
 #home-page #nav-home,
 #resume-page #nav-resume,
+#hobbies-page #nav-hobbies,
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
@@ -60,11 +64,11 @@ html {
 
 #about-page #nav-about,
 #home-page #nav-home,
-#resume-page #nav-resume {
+#resume-page #nav-resume,
+#hobbies-page #nav-hobbies {
   cursor: default;
 }
 /* Resume Styles */
-
 #about-page h1,
 #resume-page h1 {
   text-align: center;
@@ -78,6 +82,7 @@ html {
 }
 #resume-page h3{
   font-weight: bold;
+  text-align: left;
 }
 #resume-page h4 {
   position: absolute;
@@ -94,7 +99,6 @@ html {
 .responsibilities, .achievements, .skills {
   list-style-type: disc;
 }
-
 /*style about me page */
 .tagline {
   text-align: center;
@@ -104,10 +108,10 @@ html {
 }
 
 /*style for running-page */
-#hobbies html {
+#hobbies-page html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25em; /* 20px / 16px */
-  background-color: rgb(168,190,255); /*light blue color*/
+  background-color: rgb(233,233,242);/*light blue color*/
   margin: 1.875em ; /* 30px / 16px */
   padding-bottom: 2.25em ; /* 30px / 16px */
 }
@@ -120,21 +124,18 @@ img,audio,video {
   max-width: 100%;
 }
 /*mobile first settings*/
-#hobbies h1 {
+#hobbies-page h1 {
   text-align: center;
-  font-size: 1.875em; /* 30px / 16 px */
-  line-height: 1.25em; /* 20px / 16 px */
-  padding: 1em; /* 16px / 16 px */
+  font-size: 3.125em; /* 30px / 16 px */
+  font-weight: bold;
+  padding: .5em; /* 16px / 16 px */
   grid-column: 1/4;
-  color: rgb(255,255,255);
 }
-#hobbies header {
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
-  background-color: rgb(44,66,128);
+#hobbies-page body {
+  background-color: rgb(233,233,242)
 }
 .runbkgrd {
-  background-color: rgb(74,107,204);
+  background-color: rgb(24,162,221);
   padding-bottom: .5em;
   padding-top: .5em;
 }
@@ -145,12 +146,12 @@ h2 {
   line-height: 1.25em; /* 20px / 16px */
   padding: 0.5em; /* 8px / 16px */
 }
-h3 {
+#hobbies-page h3 {
   font-weight: bold;
   font-size: 1.25em; /* 20px / 16px */
   line-height: 1.25em; /* 20px / 16px */
   padding: 0.5em; /* 8px / 16px */
-  color: rgb(44,66,128);
+  color: rgb(83,115,34);
 }
 h4 {
   text-align: center;
@@ -166,9 +167,28 @@ p {
   padding-right: 0.5em ; /* 8px / 16px */
   padding-bottom: 0.5em; /* 8px / 16px */
   }
+#hobbies-page img {
+  border: .125em solid;
+  border-radius: .5em;
+  border-color: rgb(138,166,38)
+}
 /*ipad or tablet view*/
-@media screen and (min-width: 750px){
-h3 {
+@media screen and (min-width: 650px){
+#home-page .grid{
+  display: grid;
+  grid-template-columns: 0.3fr 0.4fr 0.3fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0.625em; /* 10px / 16px */
+  grid-row-gap: 0.625em; /* 15px / 16px */
+}
+#home-page footer {
+  grid-column: 2 / 3;
+}
+#resume-page body {
+  margin-left: 3.125em;
+  margin-right: 3.125em;
+}
+#hobbies-page h3 {
   text-align: center;
   font-weight: bold;
   font-size: 1.25em; /* 20px / 16px */
@@ -176,14 +196,37 @@ h3 {
   padding: 0.5em; /* 8px / 16px */
   color: rgb(44,66,128);
 }
+#about-page .grid {
+  display: grid;
+  grid-template-columns: 0.2fr 0.6fr 0.2fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0.625em; /* 10px / 16px */
+  grid-row-gap: 0.625em; /* 15px / 16px */
+}
+#about-page header {
+  grid-column: 2 / 3;
+}
+#about-page .grid2{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0.625em; /* 10px / 16px */
+  grid-row-gap: 0.625em; /* 15px / 16px */
+}
+#about-page .background {
+  grid-column: 1 / 2;
+}
+#about-page .interests {
+  grid-column: 2 / 3;
 }
 /*desktop view*/
 @media screen and (min-width: 800px){
-html {
+
+#hobbies-page html {
   margin-left: 5.625em;
   margin-right: 5.625em;
 }
-.grid {
+#hobbies-page .grid {
   display: grid;
   grid-template-columns: 0.4fr 0.2fr 0.4fr;
   grid-template-rows: auto;
