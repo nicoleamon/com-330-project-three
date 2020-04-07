@@ -14,6 +14,14 @@ html {
   margin-left: 1.125em;
   margin-right: 1.125em;
 }
+/* Responsive media */
+img,audio,video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  max-width: 100%;
+}
 /*home-page styles*/
 #home-page h1 {
   font-size: 3.125em;
@@ -21,8 +29,12 @@ html {
   padding: .375em;
 }
 #home-page h2 {
+  font-size: 1.625em;
   text-align: center;
   font-weight: bold;
+}
+#home-page body{
+  background-color: #E7EBD4;
 }
 .headshot {
   padding-bottom: 1.125em;
@@ -79,10 +91,16 @@ address{
 #resume-page h2 {
   text-align: center;
   font-size: 1.625em;
+  line-height: 1.875em;
+  font-weight: bold;
+  color: rgb(93,116,179);
 }
 #resume-page h3{
-  font-weight: bold;
   text-align: left;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1.625em;
+  color: rgb(179,149,75);
 }
 #resume-page h4 {
   position: absolute;
@@ -106,8 +124,20 @@ address{
   padding-left: 1.625em;
   padding-right: 1.625em;
 }
-
-/*style for running-page */
+#about-me body {
+  background-color: rgb(182,219,240)
+}
+#about-page h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25em; /* 20px / 16px */
+  line-height: 1.25em; /* 20px / 16px */
+  padding: 0.5em; /* 8px / 16px */
+}
+#about-page body {
+  background-color: rgb(182,219,240);
+}
+/*style for hobbies-page */
 #hobbies-page html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25em; /* 20px / 16px */
@@ -115,15 +145,7 @@ address{
   margin: 1.875em ; /* 30px / 16px */
   padding-bottom: 2.25em ; /* 30px / 16px */
 }
-/* Responsive media */
-img,audio,video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.5em;
-  max-width: 100%;
-}
-/*mobile first settings*/
+/*hobbies-page*/
 #hobbies-page h1 {
   text-align: center;
   font-size: 3.125em; /* 30px / 16 px */
@@ -135,16 +157,16 @@ img,audio,video {
   background-color: rgb(233,233,242)
 }
 .runbkgrd {
-  background-color: rgb(24,162,221);
   padding-bottom: .5em;
   padding-top: .5em;
 }
-h2 {
+#hobbies-page h2 {
   text-align: center;
   font-weight: bold;
   font-size: 1.25em; /* 20px / 16px */
   line-height: 1.25em; /* 20px / 16px */
   padding: 0.5em; /* 8px / 16px */
+  color: rgb(83,115,34);
 }
 #hobbies-page h3 {
   font-weight: bold;
@@ -153,7 +175,7 @@ h2 {
   padding: 0.5em; /* 8px / 16px */
   color: rgb(83,115,34);
 }
-h4 {
+#hobbies-page h4 {
   text-align: center;
   font-weight: bold;
   font-size: 1.25em; /* 20px / 16px */
@@ -188,14 +210,7 @@ p {
   margin-left: 3.125em;
   margin-right: 3.125em;
 }
-#hobbies-page h3 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.25em; /* 20px / 16px */
-  line-height: 1.25em; /* 20px / 16px */
-  padding: 0.5em; /* 8px / 16px */
-  color: rgb(44,66,128);
-}
+
 #about-page .grid {
   display: grid;
   grid-template-columns: 0.2fr 0.6fr 0.2fr;
@@ -218,6 +233,14 @@ p {
 }
 #about-page .interests {
   grid-column: 2 / 3;
+}
+#hobbies-page h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25em; /* 20px / 16px */
+  line-height: 1.25em; /* 20px / 16px */
+  padding: 0.5em; /* 8px / 16px */
+  color: rgb(44,66,128);
 }
 /*desktop view*/
 @media screen and (min-width: 800px){
