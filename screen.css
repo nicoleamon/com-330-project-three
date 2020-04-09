@@ -13,6 +13,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   margin-left: 1.125em;
   margin-right: 1.125em;
+  margin-bottom: 1.125em;
 }
 /* Responsive media */
 img,audio,video {
@@ -169,21 +170,6 @@ address{
   line-height: 1.25em; /* 20px / 16px */
   padding: 0.5em; /* 8px / 16px */
   color: rgb(83,115,34);
-}
-#hobbies-page h3 {
-  font-weight: bold;
-  font-size: 1.25em; /* 20px / 16px */
-  line-height: 1.25em; /* 20px / 16px */
-  padding: 0.5em; /* 8px / 16px */
-  color: rgb(83,115,34);
-}
-#hobbies-page h4 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.25em; /* 20px / 16px */
-  line-height: 1.25em; /* 20px / 16px */
-  padding: 0.5em; /* 8px / 16px */
-  color: rgb(44,66,128);
 }
 p {
   line-height: 1.25em; /* 20px/ 16px */
