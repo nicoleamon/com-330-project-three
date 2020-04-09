@@ -30,6 +30,7 @@ img,audio,video {
 }
 #home-page h2 {
   font-size: 1.625em;
+  line-height: 1.875em;
   text-align: center;
   font-weight: bold;
 }
@@ -48,6 +49,7 @@ img,audio,video {
 }
 address{
   line-height: 1.25em;
+  text-align: center;
 }
 /*Navigation Styles*/
 .nav a {
