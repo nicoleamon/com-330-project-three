@@ -87,11 +87,10 @@ address{
   cursor: default;
 }
 /* Resume Styles */
-#about-page h1,
 #resume-page h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 1.875em;
+  font-size: 3.125em;
   padding: .375em;
 }
 #resume-page h2 {
@@ -124,14 +123,14 @@ address{
   list-style-type: disc;
 }
 /*style about me page */
-.tagline {
-  text-align: center;
-  font-style: italic;
-  padding-left: 1.625em;
-  padding-right: 1.625em;
-}
 #about-me body {
   background-color: rgb(182,219,240)
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.125em;
+  padding: .375em;
 }
 #about-page h2 {
   text-align: center;
@@ -149,10 +148,9 @@ address{
 /*hobbies-page*/
 #hobbies-page h1 {
   text-align: center;
-  font-size: 3.125em; /* 30px / 16 px */
   font-weight: bold;
-  padding: .5em; /* 16px / 16 px */
-  grid-column: 1/4;
+  font-size: 3.125em; /* 30px / 16 px */
+  padding: .375em; /* 16px / 16 px */
 }
 #hobbies-page body {
   background-color: rgb(233,233,242)
@@ -268,7 +266,7 @@ p {
   grid-column: 1 / 4;
 }
 .running,.springhalf {
-  grid-column: 1;
+  grid-column: 1 / 2;
   grid-row: auto;
 }
 .runforfun,.goals {
