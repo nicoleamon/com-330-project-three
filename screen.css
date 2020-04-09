@@ -47,7 +47,7 @@ img,audio,video {
 .highlights {
   line-height: 1.75em;
   padding-left: 1.125em;
-  }
+}
 .highlights li{
   list-style-type: disc;
 }
@@ -83,7 +83,7 @@ address{
 #about-page #nav-about,
 #home-page #nav-home,
 #resume-page #nav-resume,
-#hobbies-page #nav-hobbies {
+#hobbies-page #nav-hobbies, {
   cursor: default;
 }
 /* Resume Styles */
@@ -182,43 +182,64 @@ p {
 }
 /*ipad or tablet view*/
 @media screen and (min-width: 650px){
-#home-page .grid{
+#home-page .grid {
   display: grid;
   grid-template-columns: 0.3fr 0.4fr 0.3fr;
   grid-template-rows: auto;
   grid-column-gap: 0.625em; /* 10px / 16px */
   grid-row-gap: 0.625em; /* 15px / 16px */
 }
+/*home page ipad*/
+.welcome,.highlights {
+  grid-column: 2 / 4;
+}
+.headshot {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
 #home-page footer {
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
 }
-#resume-page body {
-  margin-left: 3.125em;
-  margin-right: 3.125em;
-}
-
-#about-page .grid {
+/*resume ipad*/
+#resume-page .grid {
   display: grid;
-  grid-template-columns: 0.2fr 0.6fr 0.2fr;
+  grid-template-columns: 0.3fr 0.4fr 0.3fr;
   grid-template-rows: auto;
-  grid-column-gap: 0.625em; /* 10px / 16px */
+  grid-column-gap: 0.875em; /* 10px / 16px */
   grid-row-gap: 0.625em; /* 15px / 16px */
 }
-#about-page header {
-  grid-column: 2 / 3;
+#resume-page main {
+  grid-column: 2 / 4 ;
 }
-#about-page .grid2{
+/*ipad about-page*/
+#about-page .grid{
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-columns: .3fr .4fr .3fr;
   grid-template-rows: auto;
-  grid-column-gap: 0.625em; /* 10px / 16px */
+  grid-column-gap: 1.875em; /* 10px / 16px */
   grid-row-gap: 0.625em; /* 15px / 16px */
 }
 #about-page .background {
-  grid-column: 1 / 2;
+  grid-column: 2 / 4;
+  padding-top: 1.875em;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
 }
 #about-page .interests {
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
+}
+/*ipad hobbies-page*/
+#hobbies-page .grid {
+  display: grid;
+  grid-template-columns: 0.4fr 0.2fr 0.4fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0.625em; /* 10px / 16px */
+  grid-row-gap: 0.625em; /* 15px / 16px */
+}
+.runbkgrd {
+  margin: auto;
+  grid-column: 2 / 4;
 }
 #hobbies-page h3 {
   text-align: center;
@@ -228,6 +249,7 @@ p {
   padding: 0.5em; /* 8px / 16px */
   color: rgb(44,66,128);
 }
+
 /*desktop view*/
 @media screen and (min-width: 800px){
 
@@ -235,7 +257,7 @@ p {
   margin-left: 5.625em;
   margin-right: 5.625em;
 }
-#hobbies-page .grid {
+#hobbies-page .grid2 {
   display: grid;
   grid-template-columns: 0.4fr 0.2fr 0.4fr;
   grid-template-rows: auto;
@@ -270,7 +292,7 @@ p {
 .whatsnext, .gallery{
   grid-column: 1 / 4;
 }
-.grid2 {
+.grid3 {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows: auto;
