@@ -84,7 +84,7 @@ address{
 #about-page #nav-about,
 #home-page #nav-home,
 #resume-page #nav-resume,
-#hobbies-page #nav-hobbies, {
+#hobbies-page #nav-hobbies {
   cursor: default;
 }
 /* Resume Styles */
@@ -216,6 +216,7 @@ p {
 #resume-page main {
   grid-column: 2 / 4 ;
 }
+
 /*ipad about-page*/
 #about-page .grid{
   display: grid;
@@ -247,6 +248,13 @@ p {
   padding-left: .625em;
   padding-right: .625em;
 }
+#hobbies-page img {
+  width: 60%;
+}
+#hobbies-page .grid3 {
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
 #hobbies-page h3 {
   text-align: center;
   font-weight: bold;
@@ -254,6 +262,7 @@ p {
   line-height: 1.25em; /* 20px / 16px */
   padding: 0.5em; /* 8px / 16px */
   color: rgb(44,66,128);
+}
 }
 /*desktop view*/
 @media screen and (min-width: 800px){
@@ -268,6 +277,9 @@ p {
   grid-template-rows: auto;
   grid-column-gap: 0.625em; /* 10px / 16px */
   grid-row-gap: 0.625em; /* 15px / 16px */
+}
+#hobbies-page img {
+  width: 100%
 }
 .runbkgrd {
   grid-column: 1 / 4;
@@ -322,9 +334,9 @@ p {
   grid-row-gap: 0.625em; /* 15px / 16px */
 }
 .galleryimg1{
-  grid-column: 1 ;
+  grid-column: 1;
 }
 .galleryimg2{
-  grid-column: 2 ;
+  grid-column: 2;
 }
 }
