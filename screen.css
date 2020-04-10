@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit;}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
 /* Begin site styles... */
@@ -17,6 +18,12 @@ html {
   margin-right: 1.125em;
   padding-bottom: 1.125em;
 }
+#home-page,
+#resume-page,
+#about-page,
+#hobbies-page, body{
+  background-color: #D8E0F2;
+}
 /* Responsive media */
 img,audio,video {
   display: block;
@@ -30,6 +37,7 @@ img,audio,video {
 #home-page h1 {
   font-size: 2.375em;
   font-weight: bold;
+  line-height: 1.375em;
   text-align: center;
   padding: .375em;
 }
@@ -38,9 +46,6 @@ img,audio,video {
   line-height: 1.875em;
   text-align: center;
   font-weight: bold;
-}
-#home-page body{
-  background-color: #E7EBD4;
 }
 .headshot {
   padding-bottom: 1.125em;
@@ -58,9 +63,9 @@ address{
 }
 /*Navigation Styles*/
 .nav a {
-  background: #2263B3;
-  border: 1px solid #2263B3;
-  color: #E7EBD4;
+  background: #2B4887;
+  border: 1px solid #2B4887;
+  color: #D8E0F2;
   display: block;
   line-height: 0;
   outline: 0;
@@ -77,8 +82,8 @@ address{
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
-  background: #E7EBD4;
-  color: #2263B3;
+  background: #D8E0F2;
+  color: #2B4887;
 }
 
 #about-page #nav-about,
@@ -91,6 +96,7 @@ address{
 #resume-page h1 {
   font-size: 2.375em;
   font-weight: bold;
+  line-height: 1.375em;
   text-align: center;
   padding: .375em;
 }
@@ -99,14 +105,14 @@ address{
   font-size: 1.625em;
   line-height: 1.875em;
   font-weight: bold;
-  color: rgb(93,116,179);
+  color:#2B4887;
 }
 #resume-page h3 {
   text-align: left;
   font-size: 1.25em;
   font-weight: bold;
   line-height: 1.625em;
-  color: rgb(179,149,75);
+  color: #BD9F4E;
 }
 #resume-page h4 {
   position: absolute;
@@ -127,22 +133,24 @@ address{
   list-style-type: disc;
 }
 /*style about me page */
-#about-page body {
-  background-color: rgb(182,219,240)
-}
 #about-page
 h1 {
   font-size: 2.375em;
   font-weight: bold;
+  line-height: 1.375em;
   text-align: center;
   padding: .375em;
 }
 #about-page h2 {
   text-align: center;
   font-weight: bold;
-  font-size: 1.25em; /* 20px / 16px */
-  line-height: 1.25em; /* 20px / 16px */
+  font-size: 1.875em; /* 20px / 16px */
   padding: 0.5em; /* 8px / 16px */
+}
+#about-page .background, .interests {
+  background-color: #9BAEBF;
+  border-radius: 0.5em;
+  padding-bottom: 1.125em;
 }
 /*style for hobbies-page */
 #hobbies-page html {
@@ -150,28 +158,38 @@ h1 {
   font-size: 1.25em; /* 20px / 16px */
   background-color: rgb(233,233,242);/*light blue color*/
 }
-/*hobbies-page*/
-#hobbies-page body {
-  background-color: rgb(233,233,242)
-}
 #hobbies-page
 h1 {
   font-size: 2.375em;
   font-weight: bold;
+  line-height: 1.375em;
   text-align: center;
   padding: .375em;
 }
+#hobbies-pages p {
+  padding: 2.125em;
+}
 .runbkgrd {
+  padding-top: 1.125em;
+}
+.runbkgrd,
+.runforfun,
+.runbetter,
+.goals,
+.endgoal,
+.gallery {
   padding-bottom: .5em;
   padding-top: .5em;
+  background-color: #9BAEBF;
+  border-radius: 0.5em;
 }
 #hobbies-page h2 {
   text-align: center;
   font-weight: bold;
-  font-size: 1.25em; /* 20px / 16px */
+  font-size: 1.875em; /* 20px / 16px */
   line-height: 1.25em; /* 20px / 16px */
   padding: 0.5em; /* 8px / 16px */
-  color: rgb(83,115,34);
+  color: #38733C;
 }
 p {
   line-height: 1.25em; /* 20px/ 16px */
@@ -182,7 +200,7 @@ p {
 #hobbies-page img {
   border: .125em solid;
   border-radius: .5em;
-  border-color: rgb(138,166,38)
+  border-color: #38733C;
 }
 /*ipad or tablet view*/
 @media screen and (min-width: 650px){
@@ -196,6 +214,7 @@ p {
 /*home page ipad*/
 .welcome,.highlights {
   grid-column: 2 / 4;
+  margin-top: 0.5em;
 }
 .headshot {
   margin-left: auto;
@@ -227,12 +246,14 @@ p {
 }
 #about-page .background {
   grid-column: 2 / 4;
-  padding-top: 1.875em;
+  padding-top: .625em;
   padding-left: 1.875em;
   padding-right: 1.875em;
 }
 #about-page .interests {
   grid-column: 2 / 4;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
 }
 /*ipad hobbies-page*/
 #hobbies-page .grid {
@@ -243,7 +264,7 @@ p {
   grid-row-gap: 0.625em; /* 15px / 16px */
 }
 #hobbies-page .runbkgrd, main {
-  margin: auto;
+
   grid-column: 2 / 4;
   padding-left: .625em;
   padding-right: .625em;
@@ -266,10 +287,18 @@ p {
 }
 /*desktop view*/
 @media screen and (min-width: 800px){
-
+p {
+  font-size: 1.125em;
+}
 /*desktop home-page*/
 #home-page .headshot {
   width: 70%;
+}
+/*desktop about-page*/
+#about-page .background, .interests {
+  grid-column: 2 / 4;
+  padding-left: 5.25em;
+  padding-right: 5.25em;
 }
 #hobbies-page .grid2 {
   display: grid;
