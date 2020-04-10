@@ -166,8 +166,8 @@ h1 {
   text-align: center;
   padding: .375em;
 }
-#hobbies-pages p {
-  padding: 2.125em;
+#hobbies-page p {
+  padding: 1.125em;
 }
 .runbkgrd {
   padding-top: 1.125em;
@@ -189,7 +189,7 @@ h1 {
   font-size: 1.875em; /* 20px / 16px */
   line-height: 1.25em; /* 20px / 16px */
   padding: 0.5em; /* 8px / 16px */
-  color: #38733C;
+  color: #2B4887;
 }
 p {
   line-height: 1.25em; /* 20px/ 16px */
