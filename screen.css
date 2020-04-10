@@ -66,20 +66,19 @@ img,audio,video {
   border-radius: 0.5em;
   padding-bottom: 1.125em;
 }
-.highlights {
+.websites{
   line-height: 1.75em;
   padding-left: 1.125em;
-}
-.highlights li{
   list-style-type: disc;
 }
 #home-page p{
   padding-left: 1.125em;
   padding-right: 1.125em;
 }
-address{
+#home-page footer{
   line-height: 1.25em;
   text-align: center;
+  padding-left: 1.125em;
 }
 /*Navigation Styles*/
 .nav a {
@@ -157,7 +156,7 @@ main {
   line-height: 1.25em;
   text-indent: -1.5em;
   padding-left: 1.5em;
-  margin-left: 1.5em;
+  margin-left: 1.75em;
 }
 .responsibilities, .achievements, .skills {
   list-style-type: disc;
