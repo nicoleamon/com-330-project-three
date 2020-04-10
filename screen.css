@@ -14,15 +14,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #about-page,
 #hobbies-page,
 html {
-  margin-left: 1.125em;
-  margin-right: 1.125em;
-  padding-bottom: 1.125em;
+  margin-left: 1.875em;
+  margin-right: 1.875em;
+  padding-bottom: 1.875em;
 }
 #home-page,
 #resume-page,
 #about-page,
 #hobbies-page, body{
   background-color: #D8E0F2;
+  margin-top: 0.625em;
 }
 /* Responsive media */
 img,audio,video {
@@ -34,6 +35,9 @@ img,audio,video {
   max-width: 100%;
 }
 /*home-page styles*/
+#home-page body {
+  background-color: #D8E0F2;
+}
 #home-page h1 {
   font-size: 2.375em;
   font-weight: bold;
@@ -46,8 +50,14 @@ img,audio,video {
   line-height: 1.875em;
   text-align: center;
   font-weight: bold;
+  padding-top: 0.625em;
 }
 .headshot {
+  padding-bottom: 1.125em;
+}
+.welcome {
+  background-color: #9BAEBF;
+  border-radius: 0.5em;
   padding-bottom: 1.125em;
 }
 .highlights {
@@ -57,6 +67,10 @@ img,audio,video {
 .highlights li{
   list-style-type: disc;
 }
+#home-page p{
+  padding-left: 1.125em;
+  padding-right: 1.125em;
+}
 address{
   line-height: 1.25em;
   text-align: center;
@@ -65,6 +79,7 @@ address{
 .nav a {
   background: #2B4887;
   border: 1px solid #2B4887;
+  border-radius: 0.25em;
   color: #D8E0F2;
   display: block;
   line-height: 0;
@@ -112,7 +127,7 @@ address{
   font-size: 1.25em;
   font-weight: bold;
   line-height: 1.625em;
-  color: #BD9F4E;
+  color: #AB9046;
 }
 #resume-page h4 {
   position: absolute;
@@ -133,8 +148,7 @@ address{
   list-style-type: disc;
 }
 /*style about me page */
-#about-page
-h1 {
+#about-page h1 {
   font-size: 2.375em;
   font-weight: bold;
   line-height: 1.375em;
@@ -156,7 +170,7 @@ h1 {
 #hobbies-page html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25em; /* 20px / 16px */
-  background-color: rgb(233,233,242);/*light blue color*/
+  background-color: rgb(233,233,242); /*light blue color*/
 }
 #hobbies-page
 h1 {
@@ -167,7 +181,8 @@ h1 {
   padding: .375em;
 }
 #hobbies-page p {
-  padding: 1.125em;
+  padding-left: 1.125em;
+  padding-right: 1.125em;
 }
 .runbkgrd {
   padding-top: 1.125em;
@@ -176,8 +191,7 @@ h1 {
 .runforfun,
 .runbetter,
 .goals,
-.endgoal,
-.gallery {
+.endgoal {
   padding-bottom: .5em;
   padding-top: .5em;
   background-color: #9BAEBF;
@@ -187,7 +201,6 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: 1.875em; /* 20px / 16px */
-  line-height: 1.25em; /* 20px / 16px */
   padding: 0.5em; /* 8px / 16px */
   color: #2B4887;
 }
@@ -212,9 +225,14 @@ p {
   grid-row-gap: 0.625em; /* 15px / 16px */
 }
 /*home page ipad*/
+#home-page h1 {
+  font-size: 2em;
+  line-height: 1.8125em;
+}
 .welcome,.highlights {
   grid-column: 2 / 4;
   margin-top: 0.5em;
+  margin-left: 1.25em;
 }
 .headshot {
   margin-left: auto;
@@ -234,9 +252,11 @@ p {
 }
 #resume-page main {
   grid-column: 2 / 4 ;
+  padding-top: 1.125em;
+  padding-left: 1.125em;
 }
-
 /*ipad about-page*/
+
 #about-page .grid{
   display: grid;
   grid-template-columns: 0.3fr 0.4fr 0.3fr;
@@ -264,7 +284,6 @@ p {
   grid-row-gap: 0.625em; /* 15px / 16px */
 }
 #hobbies-page .runbkgrd, main {
-
   grid-column: 2 / 4;
   padding-left: .625em;
   padding-right: .625em;
