@@ -14,9 +14,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #about-page,
 #hobbies-page,
 html {
-  margin-left: 1.875em;
-  margin-right: 1.875em;
-  padding-bottom: 1.875em;
+  margin-left: 1.625em;
+  margin-right: 1.625em;
+  padding-bottom: 1.625em;
 }
 #home-page,
 #resume-page,
@@ -24,6 +24,12 @@ html {
 #hobbies-page, body{
   background-color: #D8E0F2;
   margin-top: 0.625em;
+}
+#home-page,
+#resume-page,
+#about-page,
+#hobbies-page, p{
+  font-size: 1.0625em;
 }
 /* Responsive media */
 img,audio,video {
@@ -131,7 +137,7 @@ address{
 }
 #resume-page h4 {
   position: absolute;
-  left: -10000px;
+  left: -10000em;
 }
 .degree {
   font-style: italic;
@@ -140,9 +146,11 @@ address{
 .responsibilities li,
 .achievements li,
 .skills li {
-  text-indent: -24px;
-  padding-left: 24px;
-  margin-left: 24px;
+  font-size: 1.125em;
+  line-height: 1.25em;
+  text-indent: -1.5em;
+  padding-left: 1.5em;
+  margin-left: 1.5em;
 }
 .responsibilities, .achievements, .skills {
   list-style-type: disc;
@@ -164,6 +172,8 @@ address{
 #about-page .background, .interests {
   background-color: #9BAEBF;
   border-radius: 0.5em;
+  padding-left: 1.125em;
+  padding-right: 1.125em;
   padding-bottom: 1.125em;
 }
 /*style for hobbies-page */
@@ -187,14 +197,18 @@ h1 {
 .runbkgrd {
   padding-top: 1.125em;
 }
-.runbkgrd,
+.runbkgrd {
+  padding-bottom: .5em;
+  padding-top: .5em;
+  background-color: #9BAEBF;
+  border-radius: 0.5em;
+}
 .runforfun,
 .runbetter,
 .goals,
 .endgoal {
   padding-bottom: .5em;
   padding-top: .5em;
-  background-color: #9BAEBF;
   border-radius: 0.5em;
 }
 #hobbies-page h2 {
@@ -306,8 +320,11 @@ p {
 }
 /*desktop view*/
 @media screen and (min-width: 800px){
-p {
-  font-size: 1.125em;
+#home-page,
+#resume-page,
+#about-page,
+#hobbies-page, p {
+  font-size: 1.25em;
 }
 /*desktop home-page*/
 #home-page .headshot {
@@ -316,9 +333,8 @@ p {
 /*desktop about-page*/
 #about-page .background, .interests {
   grid-column: 2 / 4;
-  padding-left: 5.25em;
-  padding-right: 5.25em;
 }
+/*desktop hobbies-page*/
 #hobbies-page .grid2 {
   display: grid;
   grid-template-columns: 0.4fr 0.2fr 0.4fr;
