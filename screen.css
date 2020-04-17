@@ -139,8 +139,8 @@ img,audio,video {
   left: -10000em;
 }
 main {
-  padding-left: 1.125em;
-  padding-right: 1.125em;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
   padding-bottom: 1.125em;
   border-radius: 0.5em;
   background-color: rgb(255,255,255,0.6)
@@ -273,7 +273,7 @@ p {
 #resume-page main {
   grid-column: 2 / 4 ;
   padding-top: 1.125em;
-  padding-left: 1.125em;
+  padding-left: 1.875em;
 }
 /*ipad about-page*/
 
