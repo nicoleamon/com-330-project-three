@@ -132,13 +132,13 @@ img,audio,video {
   font-size: 1.25em;
   font-weight: bold;
   line-height: 1.625em;
-  color: #AB9046;
+  color: #B69046;
 }
 #resume-page h4 {
   position: absolute;
   left: -10000em;
 }
-main {
+#resume-page main {
   padding-left: 1.875em;
   padding-right: 1.875em;
   padding-bottom: 1.125em;
@@ -246,7 +246,7 @@ p {
 }
 /*home page ipad*/
 #home-page h1 {
-  font-size: 2em;
+  font-size: 1.9375em;
   line-height: 1.8125em;
 }
 .welcome,.highlights {
